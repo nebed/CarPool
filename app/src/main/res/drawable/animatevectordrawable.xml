@@ -1,0 +1,9 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_poollogo">
+
+    <target android:name="headlamps" android:animation="@anim/zoomandblink"/>
+    <target android:name="path1" android:animation="@anim/blink1"/>
+    <target android:name="path2" android:animation="@anim/blink2"/>
+    <target android:name="grill" android:animation="@anim/zoom"/>
+</animated-vector>

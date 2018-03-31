@@ -1,0 +1,21 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+
+    <objectAnimator
+        android:name="grill"
+        android:propertyName="scaleX"
+        android:duration="1500"
+        android:valueFrom="0.5"
+        android:valueTo="1"
+        />
+
+    <objectAnimator
+        android:name="grill"
+        android:propertyName="scaleY"
+        android:duration="1500"
+        android:valueFrom="0.5"
+        android:valueTo="1"
+        />
+
+</set>

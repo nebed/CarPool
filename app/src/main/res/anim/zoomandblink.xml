@@ -1,0 +1,21 @@
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <objectAnimator
+        android:name="headlamps"
+        android:propertyName="scaleX"
+        android:duration="1500"
+        android:valueFrom="0.5"
+        android:valueTo="1"
+        />
+
+    <objectAnimator
+        android:name="headlamps"
+        android:propertyName="scaleY"
+        android:duration="1500"
+        android:valueFrom="0.5"
+        android:valueTo="1"
+        />
+
+</set>
