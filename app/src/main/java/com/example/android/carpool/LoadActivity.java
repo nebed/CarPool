@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.animation.Animation;
-import android.view.animation.Animation.AnimationListener;
 import android.widget.ImageView;
 
 public class LoadActivity extends AppCompatActivity {
@@ -25,7 +23,7 @@ public class LoadActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent =  new Intent(LoadActivity.this, MainActivity.class);
+                final Intent mainIntent =  new Intent(LoadActivity.this, WelcomeActivity.class);
                 LoadActivity.this.startActivity(mainIntent);
                 LoadActivity.this.finish();
             }
@@ -41,36 +39,3 @@ public class LoadActivity extends AppCompatActivity {
         currentDrawable.start();
     }
 }
-
-/**    public void bounceOff(){
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce);
-        car.startAnimation(animation);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                off();
-            }
-        }, 5000);
-
-    }
-**/
- /**   public void off(){
-        Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move_right);
-        car.startAnimation(animation1);
-        final MediaPlayer mp =MediaPlayer.create(this, R.raw.carstartgarage1);
-        mp.start();
-
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(LoadActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        }, 5000);
-    }
-
-
-}
-**/

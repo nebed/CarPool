@@ -16,8 +16,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/SubTheme" />
-        <activity android:name=".LoadActivity">
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LoadActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".signUpActivity"></activity>
+        <activity android:name=".signUpActivity" />
+        <activity android:name=".WelcomeActivity"></activity>
+
     </application>
 
 </manifest>

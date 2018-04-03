@@ -8,7 +8,7 @@
         android:propertyName="fillAlpha"
         android:valueFrom="1"
         android:valueTo="0"
-        android:repeatCount="2"
+        android:repeatCount="1"
         android:repeatMode="reverse"
         />
 </set>
